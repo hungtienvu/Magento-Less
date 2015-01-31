@@ -1,0 +1,22 @@
+.rounded-button-main(@button_icon_bg:#00B8CC) {
+	.border-radius(25px);background: @button_color;.white !important;line-height: @button_height;height: @button_height;padding: 0 54px 0 24px;display: inline-block;
+	font-size: @button_fz;text-transform: uppercase;
+	&:after {
+		content: '\f138';font-family:@awesomefont;padding-left: 20px;font-size: 30px;position: absolute;color: @button_icon_bg;
+	}
+	&:hover {
+		.bg-black;
+		&:after {.white;.transition;.transition-delay(.4s)}
+	}
+}
+.rounded-button {.rounded-button-main();}
+.rounded-button-green {
+	.rounded-button-main(#96CD64);
+}
+
+//.newsletter-bt with no text and having an icon
+.newsletter-bt {background: @blue_color;height: @input_height;padding: 5px 10px;.transition;
+	&:after {content: '\f054';.white;font-size:@regular_fz;font-family:@awesomefont;}
+}
+
+

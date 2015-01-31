@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){function e(){var e=jQuery(window).scrollTop(),o=jQuery(window).height(),r=jQuery(".flexible-footer"),i=jQuery("footer");e+o<i.offset().top+r.outerHeight()?r.addClass("sticky"):r.removeClass("sticky")}e(),jQuery(window).scroll(function(o){e()}),jQuery(window).resize(function(o){e()})});

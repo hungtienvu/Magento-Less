@@ -1,0 +1,13 @@
+.slideshow-pager {bottom: 15px;
+	.pager-box {width: 10px;height: 10px;margin: 0 3px;
+		&:hover {
+			&:before {background: #fff !important;}
+		}
+		&:before {
+			.border-radius(50%);width: 10px;height: 10px;background: #B1AFA5;margin: 0 !important;position: static;top: 0;left: 0;
+		}
+		&.cycle-pager-active {
+			&:before {background: #fff !important;}
+		}
+	}
+}

@@ -1,0 +1,86 @@
+.selections-boxes {
+	.four-boxes {
+		width: 50%;.left;
+		li {.left;width: 50%;height: 489px;.align-center;
+			&:nth-child(1) {background:  url(../images/men.jpg) center center no-repeat;background-size: cover;}
+			&:nth-child(2) {background:  url(../images/women.jpg) center center no-repeat;background-size: cover;}
+			&:nth-child(3) {background:  url(../images/kid.jpg) center center no-repeat;background-size: cover;}
+			&:nth-child(4) {background:  url(../images/athlete.jpg) center center no-repeat;background-size: cover;
+				a {font-size: 48px;}
+			}
+			a {.white;font-family:@heavy_font;font-size: 72px;.upper;.em1;
+				.table-center {height: 100%;}
+			}
+			&:extend(.table-style all);
+			&:hover {.transition;opacity: .8;}
+		}
+	}
+	.terrain {
+		.left;background: url(../images/terrain.jpg) center center no-repeat;height: 489*2px;background-size: cover;
+		width: 50%;.align-center;
+		h2 {font-size: 92px;.text-transform-none;.white;}
+		&:hover {.transition;opacity: .8;}
+	}
+}
+//cutting-edge-technology
+.cutting-edge-technology {
+	.align-center;padding: 66px 0;overflow: hidden;width: 100%;
+	h2 {font-size: 36px;.ty-bold;margin-bottom: 35px;}
+	img {display: inline-block;}
+}
+//product-spotlight
+.product-spotlight {
+	height: 978px;background: url(../images/product-spotlight-bg.jpg) center center no-repeat;background-size: cover;.rel;
+	width: 100%;
+	.spotlight-img {width: 100%;.align-center;
+		.img-wrapper {display: inline-block;.rel;
+			.point {
+				position: absolute;background: url(../images/point.png) 0 0 no-repeat;width: 13px;height: 13px;
+				span.container {display: inline-block;.rel;
+					span {position: absolute;.align-left;width:220px;top: -20px;font-family: @bold;font-size:@fz_m;color: @main_color;
+						.transition;opacity: 0;
+						em {width: 55px;background:url(../images/spotlight-line.gif) 0 center no-repeat;display: inline-block;height: 8px;margin-left: 4px;}
+					}
+					&.right-side {
+						em {.left;margin: 8px 4px 0 0;}
+					}
+				}
+				&:hover {
+					span.container span {opacity: 1;}
+				}
+			}
+			.cal-point-width {
+				p {font-family: @bold;font-size:@fz_m;
+					em {width: 55px;display: inline-block;height: 8px;margin-left: 4px;}
+				}
+			}
+		}
+		img {display: inline-block;}
+	}
+	.text-content {width: 432px;margin: 0 auto;.ob;right: 149px;top: 271px;
+		h4 {color: @grey_color;font-size: 18px;margin-bottom: 0;}
+		h2 {color: @grey_color;font-size: 54px;font-family: @bold_font;line-height: 1em;}
+		p {color: @grey_color;font-size: 54px;font-size: @fz_m;margin-bottom: 20px;}
+	}
+}
+
+//share-your-moment
+.share-your-moment {height: 390px;background: url(../images/bridgedale-moment.jpg) center center no-repeat;background-size: cover;.align-center;
+	h2 {font-size: 60px;.white;font-family: @bold_font;text-transform: none;}
+	.center {background:rgba(0,0,0,0.6);cursor: pointer;
+		&:hover {background: none;.transition;.transition-delay(0.4s);opacity: 1 !important;
+			h2 {opacity: 0;.transition;.transition-delay(0.4s);}
+		}
+	}
+}
+
+//where-to-buy
+.where-to-buy {.rel;background: url(../images/map.jpg) center center no-repeat;
+	h2:extend(.share-your-moment h2 all){}
+	.table-center {height: 390px;.ab;left: 0;top: 0;z-index: 99;.align-center;background:rgba(0,0,0,0.6);cursor: pointer;
+		&:hover {background: none;.transition;.transition-delay(0.4s);opacity: 1 !important;
+			h2 {opacity: 0;.transition;.transition-delay(0.4s);}
+		}
+	}
+	#home-map {height: 390px;z-index: 9;}
+}

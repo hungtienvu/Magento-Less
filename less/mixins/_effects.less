@@ -1,0 +1,22 @@
+.transition {
+	-webkit-transition: all .3s ease-out .1s;
+	   -moz-transition: all .3s ease-out .1s;
+	    -ms-transition: all .3s ease-out .1s;
+	     -o-transition: all .3s ease-out .1s;
+	        transition: all .3s ease-out .1s;
+}
+//ex .transition-delay(1s);
+.transition-delay(@transition-delay) {
+  -webkit-transition-delay: @transition-delay;
+     -moz-transition-delay: @transition-delay;
+       -o-transition-delay: @transition-delay;
+          transition-delay: @transition-delay;
+}
+
+.translate(@x, @y) {
+  -webkit-transform: translate(@x, @y);
+     -moz-transform: translate(@x, @y);
+      -ms-transform: translate(@x, @y);
+       -o-transform: translate(@x, @y);
+          transform: translate(@x, @y);
+}

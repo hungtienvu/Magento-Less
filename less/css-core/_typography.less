@@ -1,0 +1,19 @@
+/*typography*/
+body,html  {
+	color: @main_color;font-family:@regular_font;font-weight: normal;outline: 0;font-size: @regular_fz;
+}
+strong,b {font-family:@bold_font;font-weight: normal;}
+h1 ,h2 , h3 , h4 , h5 {
+	color: @main_color;.em12;margin-bottom: 10px;
+}
+
+a {
+	color:@main_color;outline: 0 !important;
+	&:hover {text-decoration: none;color: @main_color;.transition;}
+}
+
+.ty-bold {font-family: @bold_font}
+.ty-heavy {font-family: @heavy_font}
+.ty-regular {font-family: @regular_font}
+
+
